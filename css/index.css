@@ -28,11 +28,11 @@ body {
     display: inline-block;
   }
   .heroImg {
-    background-image: url("../images/heroImg_bg.png");
+    background-image: url("../images/heroImg_bg_city_ruins.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: relative;
-    background-size: cover;  
+    background-size: cover;
   }
   .content {
     max-width: 300px;
