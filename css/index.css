@@ -8,8 +8,10 @@ body {
     position: sticky;
   }
   header img {
-    max-height: 100px;
+    max-height: 120px;
     border-radius: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
   }
   header ul {
     float: right;
@@ -30,16 +32,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: relative;
-    background-size: cover;
-    /* background-color: #EBEBEB; */
-    /* padding: 100px 15px; */
-  
+    background-size: cover;  
   }
   .content {
     max-width: 300px;
     margin: 0 auto;
     padding: 50px;
-    background-color: #FFFFFF;
+    /* background-color: rgba(0,0,0,0.3); */
     text-align: center;
   }
   button {
