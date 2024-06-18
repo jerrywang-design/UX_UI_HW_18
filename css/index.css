@@ -3,12 +3,12 @@ body {
   }
   header {
     background-color: #373738;
-    padding: 15px;
-    max-height: 100px;
+    padding: 4px;
+    max-height: 15vh;
     position: sticky;
   }
   header img {
-    max-height: 120px;
+    max-height: 10vh;
     border-radius: 100%;
     object-position: 50% 50%;
     object-fit: cover;
@@ -28,18 +28,32 @@ body {
     display: inline-block;
   }
   .heroImg {
-    background-image: url("../images/heroImg_bg_city_ruins.png");
+    background-image: url("../images/bg_1_placeholder.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: relative;
     background-size: cover;
+    max-height: 80vh;
   }
+
+  /* Text styles */
+  .hero1 {
+    font-size: xx-large;
+  }
+  .heroBody {
+    font-size: larger;
+  }
+  .heroFine {
+    font-size: small;
+  }
+
+
   .content {
     max-width: 300px;
-    margin: 0 auto;
+    margin-left: 33%;
     padding: 50px;
     /* background-color: rgba(0,0,0,0.3); */
-    text-align: center;
+    text-align: left;
   }
   button {
     padding: 15px;
@@ -48,10 +62,22 @@ body {
     font-size: 15px;
     border-radius: 4px;
   }
-  .recentWork {
-    display: grid;
-    grid-template-columns: 300px 300px;
+  #resume {
+    display: block;
+    margin: auto;
+    /* justify-content: center;
+    align-items: center; */
+  }
+  .flexContainer {
+    display: flex;
+    flex-direction: row; /* Note: row is default, but it doesn't hurt to practice! */
+    grid-template-rows: 33% 33% 33%;
     justify-content: center;
+    align-items: left;
+  }
+  .workGrid {
+    display: grid;
+    
   }
   footer {
     background-color: #373738;
