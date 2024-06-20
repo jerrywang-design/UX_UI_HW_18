@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
   }
   header {
     background-color: #373738;
@@ -28,11 +29,11 @@ body {
     display: inline-block;
   }
   .heroImg {
-    background-image: url("../images/bg_1_placeholder.png");
+    /* background-image: url("../images/bg_1_placeholder.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: relative;
-    background-size: cover;
+    background-size: cover; */
     max-height: 80vh;
   }
 
@@ -41,12 +42,57 @@ body {
     font-size: xx-large;
   }
   .heroBody {
-    font-size: larger;
+    font-size: x-large;
   }
   .heroFine {
     font-size: small;
   }
+  
 
+  /* Hero */
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+    "featuredProduct secondaryProduct"
+    "featuredProduct CTA";
+  }
+  /*#featuredProduct {
+    grid-area: featuredProduct;
+    background-image: url("../images/furniture1.png");
+  }
+  #secondaryProduct {
+    grid-area: secondaryProduct;
+    background-image: url("../images/furniture2.png");
+  }
+  #CTA {
+    grid-area: CTA;
+    background-image: url("../images/woodbg.png");
+    justify-content: space-around;
+    cursor: pointer;
+  }*/
+  #headline {
+    background-color: rgba(255,255,255,0.6);
+    border-bottom: 4px solid #00a2ff;
+    position: absolute;
+    right: -70vh;
+    top: 15vh;
+    padding: 25px;
+    max-width: 60vh;
+    z-index: 100;
+  }
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
 
   .content {
     max-width: 300px;
@@ -56,7 +102,9 @@ body {
     text-align: left;
   }
   button {
-    padding: 15px;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
     background-color: #373738;
     color: white;
     font-size: 15px;
@@ -65,9 +113,88 @@ body {
   #resume {
     display: block;
     margin: auto;
-    /* justify-content: center;
-    align-items: center; */
   }
+
+  body {
+    background: lightgrey;
+  }
+  
+  .container {
+    position: relative;
+    background: green;
+    width: 640px;
+    height: 640px;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  /* canvas start */
+  * {
+    -webkit-touch-callout: none;
+    /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;
+    /* prevent webkit from resizing text to fit */
+    /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    /* prevent copy paste, to allow, change 'none' to 'text' */
+    /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
+}
+body {
+    background: #FFF;
+    color: #000;
+    margin: 5px;
+    padding: 0px;
+    margin-bottom: 45px;
+    text-align: center;
+    font-family: Helvetica, Arial;
+}
+a {
+    color: #000;
+}
+a.box {
+    text-decoration: none;
+    display: inline-block;
+    color: #FFF;
+    background: #000;
+    padding: 10px;
+    margin: 10px;
+}
+.big {
+    font-size: 2em;
+    display: inline-block;
+    margin: 10px;
+}
+.container {
+    position: relative;
+    display: inline-block;
+    width: 533px;
+    height: 800px;
+}
+#robot {
+    position: relative;
+    max-width: 100vw;
+    max-height: 80vh;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 20px 0px #707070;
+    -moz-box-shadow: 0px 0px 20px 0px #707070;
+    box-shadow: 0px 0px 20px 0px #707070;
+}
+#redux {
+    position: absolute;
+    top: 15vh;
+    left: 0px;
+    max-width: 100vw;
+    max-height: 80vh;
+    z-index: 2;
+}
+  /* canvas end */
+
   .flexContainer {
     display: flex;
     flex-direction: row; /* Note: row is default, but it doesn't hurt to practice! */
