@@ -35,9 +35,14 @@ body {
     background-size: cover;
     max-height: 80vh;
   }
-  .heroImg:hover {
-    cursor: crosshair;
+
+  /* paintbrush cursor */
+  /* https://www.shecodes.io/athena/5042-how-to-change-the-cursor-when-hovering-over-a-button 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+  .heroImg:hover { 
+    cursor: url(../images/cursor_paintbrush.jpg), crosshair;
   }
+  /* End paintbrush cursor */
 
   /* Text styles */
   .hero1 {
@@ -199,8 +204,8 @@ a.box {
     background-attachment: relative;
     background-size: cover; */
     
-    position: relative;
-    top: 0vh;
+    position: absolute;
+    top: 10vh;
     left: 0vw;
     width: 100vw;
     height: auto;
