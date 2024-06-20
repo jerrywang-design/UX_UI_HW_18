@@ -35,6 +35,9 @@ body {
     background-size: cover;
     max-height: 80vh;
   }
+  .heroImg:hover {
+    cursor: crosshair;
+  }
 
   /* Text styles */
   .hero1 {
@@ -181,11 +184,12 @@ a.box {
     background-attachment: absolute;
     background-size: cover; */
 
-    position: relative;
-    width: auto;
+    position: absolute;
+    width: 100vw;
     height: auto;
-    top: 0vh;
+    top: 10vh;
     left: 0vw;
+    object-fit: cover;
     z-index: 1;
 }
 #blackWhite {
@@ -198,8 +202,9 @@ a.box {
     position: relative;
     top: 0vh;
     left: 0vw;
-    width: auto;
+    width: 100vw;
     height: auto;
+    object-fit: cover;
     z-index: 2;
 }
   /* Eraser end */
